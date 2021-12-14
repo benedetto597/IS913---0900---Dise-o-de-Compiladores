@@ -1,10 +1,29 @@
+# -*- coding:utf-8 -*-
+"""
+----------------------------------------------------------------------------------------------------
+    
+    @author Grupo #4 - Diseño de Compiladores - IS913 (0900)
+    @date 27/11/2021
+    @decription Leer archivo de texto plano .lng
+    @name_file Reader.py
+    @version 1.0
+
+----------------------------------------------------------------------------------------------------
+    
+    !! Lector de parametros por consola y de archivos de texto plano
+    * Lectura de los parametros envíados por consola.
+    * Lectura del contenido del archivo enviado como parametro.
+    ? Impresión del control de errores con color rojo (ANSI)
+
+----------------------------------------------------------------------------------------------------
+"""
+
 import re
 
-
-class LexicalAnalyzer:
-    def __init__(self, reader, name):
+class Lexical:
+    def __init__(self, reader):
         self.reader = reader
-        self.fileName = name
+        self.fileName = self.reader.fileName
         self.text = self.reader.text
         self.patterns = []
         self.tokensDict = {}

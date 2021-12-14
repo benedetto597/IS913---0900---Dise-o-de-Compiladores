@@ -1,3 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+----------------------------------------------------------------------------------------------------
+    
+    @author Grupo #4 - Diseño de Compiladores - IS913 (0900)
+    @date 03/11/2021
+    @decription Analisis semantico con Lark
+    @name_file SemanticAnalyzer.py
+    @version 1.0
+
+----------------------------------------------------------------------------------------------------
+
+    ! Análisis Semántico con Lark
+    * Uso del árbol generado por Lark para la obtención del código interpretado.
+    * Limpieza de parametros a la hora de concatenar
+
+----------------------------------------------------------------------------------------------------
+"""
 from lark import Transformer, v_args
 import re
 
@@ -19,7 +37,7 @@ class Semantic(Transformer):
     def div(self, A, B):
         return float(A) / float(B)
 
-    def assignvar(self, name, value):
+    def assignvariable(self, name, value):
         self.variables[name] = value
 
     def getvar(self, name):
@@ -28,14 +46,14 @@ class Semantic(Transformer):
     def print(self, param):
         print("%s" % self.cleanParam(param))
 
-    def printvar(self, name):
+    def printvariable(self, name):
         print("%s" % (self.getvar(name)))
 
     def repeat(self, number, param):
         r = int(number) * self.cleanParam(param)
         return r
 
-    def concat(self, var1, var2):
+    def concatenate(self, var1, var2):
         varClean1 = self.variables[var1]
         varClean2 = self.variables[var2]
         return "%s %s" % (self.cleanParam(varClean1), self.cleanParam(varClean2))
