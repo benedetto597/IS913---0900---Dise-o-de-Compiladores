@@ -17,7 +17,6 @@
 from os import scandir
 import networkx as nx
 import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
 import networkx as nx
 from PIL import Image
 from networkx.drawing.nx_pydot import graphviz_layout
@@ -116,8 +115,8 @@ class Graph:
         #nx.draw_networkx_edge_labels(G,pos)
         nx.draw_networkx_edges(G, pos,edgelist=elist,width=3, arrowstyle='-|>',arrowsize=10, node_size= 5000 )
         #Guardado de la imagen/Mapa de los nodos y aristas edge_labels={('A','B'):'8',('B','C'):'12',('C','D'):'7',('E','D'):'15',('B','D'):'9'}
-        image.savefig('/home/benedetto/Documentos/IS913 - 0900 - Diseño de Compiladores/Proyecto Repositorio/proyecto-compiladores-0900/Img/GraphTree.png')
-        img = Image.open('/home/benedetto/Documentos/IS913 - 0900 - Diseño de Compiladores/Proyecto Repositorio/proyecto-compiladores-0900/Img/GraphTree.png')
+        image.savefig('/home/benedetto/Documentos/UNAH/IS913 - 0900 - Diseño de Compiladores/Proyecto Repositorio/IS913-0900-Diseno-Compiladores/Img/GraphTree.png')
+        img = Image.open('/home/benedetto/Documentos/UNAH/IS913 - 0900 - Diseño de Compiladores/Proyecto Repositorio/IS913-0900-Diseno-Compiladores/Img/GraphTree.png')
         img.show()
 
 

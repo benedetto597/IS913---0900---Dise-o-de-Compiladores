@@ -11,7 +11,7 @@
 ----------------------------------------------------------------------------------------------------
     
     ! Archivo Ejecutador
-    ! Al momento de ejecutarlo se deben de enviar 4 parametros
+    ! Al momento de ejecutarlo se deben de enviar 3 parametros
         * python3 <nombreMain> <nombreArchivo> <comando>
     ? Impresión del control de errores con color rojo (ANSI)
     ? Comandos aceptados 
