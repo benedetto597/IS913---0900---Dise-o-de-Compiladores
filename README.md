@@ -7,9 +7,8 @@
 ### Proyecto - Grupo #4
 
 ### Catedratico **Ing. Alex Hernán Moncada Gómez**
-
-
 </div>
+
 ### Integrantes 
 | Nombre | Numero De Cuenta |
 |:-------------:| :-----:|
