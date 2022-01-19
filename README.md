@@ -7,7 +7,7 @@
 ### Proyecto - Grupo #4
 
 ### Catedratico **Ing. Alex Hernán Moncada Gómez**
-</div>
+
 
 ### Integrantes 
 | Nombre | Numero De Cuenta |
@@ -20,6 +20,7 @@
 | Rafael Alberto Bautista Santos | `20151001991` |
 | Cristian Alexander Martínez Ochoa | `20131015700` |
 
+</div>
 
 _______
 _______
